@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import FontAwesome from 'react-fontawesome';
-import faStyles from 'font-awesome/css/font-awesome.css';
 import './App.css';
 
 function App() {
@@ -15,6 +13,7 @@ function App() {
 
   useEffect(() => {
     getQuotesData();
+    getRandomColor();
   }, []);
 
   const getQuotesData = () => {
